@@ -30,7 +30,7 @@ function(download_dependency_mod REPO_NAME DEPENDENCY_ID)
     file(MAKE_DIRECTORY "${DEPS_DIR}")
     
     # Construct download URL for latest release
-    set(DOWNLOAD_URL "https://github.com/${REPO_NAME}/releases/latest/download/${DEPENDENCY_ID}.geode")
+    set(DOWNLOAD_URL "https://github.com/${REPO_NAME}/releases/download/nightly/${DEPENDENCY_ID}.geode")
     set(GEODE_FILE "${DEPS_DIR}/${DEPENDENCY_ID}.geode")
     
     message(STATUS "Downloading dependency '${DEPENDENCY_ID}' from: ${DOWNLOAD_URL}")
